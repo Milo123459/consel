@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+/**
+ * Welcome to consel's cli code.
+ * This is a client built off of child_process 
+ */
 const readline = require("readline");
 const chalk = require("chalk");
 const rl = readline.createInterface({
@@ -36,7 +40,7 @@ if (process.argv[2]) {
 }
 console.log(
   chalk.blueBright(
-    `Welcome to ${chalk.underline(chalk.bold(chalk.green(`consel`)))}`
+    `Welcome to ${chalk.underline(chalk.bold(chalk.green(`consel`)))}. ${chalk.cyan(`Running on node-version ${process.version}`)}`
   )
 );
 rl.on("line", async (line) => {
@@ -72,3 +76,4 @@ rl.on("close", () => {
     )
   );
 });
+//Thanks for using consel (If you are reading this!)

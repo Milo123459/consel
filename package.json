@@ -1,6 +1,6 @@
 {
   "name": "consel",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A modified child_process client, with extensive logging.",
   "main": "index.js",
   "scripts": {
