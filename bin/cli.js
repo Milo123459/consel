@@ -40,7 +40,7 @@ if (process.argv[2]) {
 }
 console.log(
   chalk.blueBright(
-    `Welcome to ${chalk.underline(chalk.bold(chalk.green(`consel`)))}. ${chalk.cyan(`Running on node-version ${process.version}`)}`
+    `Welcome to ${chalk.underline(chalk.bold(chalk.green(`consel`)))}. ${chalk.cyan(`Running on node-version ${process.version}`)}. ${chalk.bgMagenta(chalk.bold(chalk.underline("CWD:")))} ${chalk.redBright(process.cwd())}`
   )
 );
 rl.on("line", async (line) => {
