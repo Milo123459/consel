@@ -1,6 +1,6 @@
 {
   "name": "consel",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,9 @@
   },
   "bin": {
     "consel": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milo123459/consel.git"
   }
 }
