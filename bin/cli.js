@@ -15,7 +15,7 @@ if (process.argv[2]) {
     var bar = new ProgressBar(
       `${chalk.redBright(`:current/:total`)} ${chalk.blue("|")} ${chalk.cyan(
         ":elapsed seconds elapsed"
-      )} ${chalk.blue("|")} ${chalk.greenBright(`:bar`)}`,
+      )} ${chalk.blue("|")} ${chalk.greenBright(`:bar`)} ${chalk.blue("|")} ${chalk.red(':eta')} estimated seconds remaining`,
       {
         total: 20,
         complete: "+",
