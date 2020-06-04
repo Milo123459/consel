@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const readline = require("readline");
 const chalk = require("chalk");
-const progress = require("progress");
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -19,6 +18,8 @@ if (process.argv[2]) {
       )} ${chalk.blue("|")} ${chalk.greenBright(`:bar`)}`,
       {
         total: 20,
+        complete: "+",
+        incomplete: "-",
       }
     );
     var timer = setInterval(function () {
