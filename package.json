@@ -1,7 +1,7 @@
 {
   "name": "consel",
   "version": "1.1.2",
-  "description": "",
+  "description": "A modified child_process client, with extensive logging.",
   "main": "index.js",
   "scripts": {
     "test": "node install.js",
@@ -15,7 +15,7 @@
     "process",
     "logs"
   ],
-  "author": "",
+  "author": "Salvage_Dev",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.0",
