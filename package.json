@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node install.js",
     "install": "node install.js"
   },
-  "keywords": [],
+  "keywords": ["consel","console","child_process","process","logs"],
   "author": "",
   "license": "ISC",
   "dependencies": {
