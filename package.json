@@ -1,13 +1,19 @@
 {
   "name": "consel",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node install.js",
     "install": "node install.js"
   },
-  "keywords": ["consel","console","child_process","process","logs"],
+  "keywords": [
+    "consel",
+    "console",
+    "child_process",
+    "process",
+    "logs"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
