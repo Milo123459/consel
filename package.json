@@ -1,12 +1,12 @@
 {
   "name": "consel",
-  "version": "1.1.9",
+  "version": "1.1.11",
   "description": "A modified child_process client, with extensive logging.",
   "main": "index.js",
   "scripts": {
     "test": "node install.js",
     "install": "node install.js",
-    "git": "git add . && git commit -m 'New update' && git push"
+    "git": "node git"
   },
   "keywords": [
     "consel",
