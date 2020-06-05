@@ -65,19 +65,25 @@ rl.on("line", async (line) => {
       }
     });
   } catch (err) {
+    //If there is an error, catch it and log it.
     let newErr = [];
+    //Split the message to new lines
     err.message.split(/\n/g).map((c) => newErr.push(c));
+    //Map it
     newErr.map((f) => {
       if (["\n", "\u200b", ""].includes(f)) {
       } else {
+        //Nice error handling
         return console.log(`${chalk.bgRedBright(`ERROR!`)} ${f}`);
       }
     });
   } finally {
+    //When it has logged if there was a success or error, after it will log this
     console.log(`${chalk.red(">")} Ready ${chalk.blue(Date.now())}`);
   }
 });
 rl.on("close", () => {
+  //When the process is exited, execute this code.
   console.log(
     chalk.blueBright(
       `Thank you for using ${chalk.underline(
@@ -86,4 +92,3 @@ rl.on("close", () => {
     )
   );
 });
-//Thanks for using consel (If you are reading this!)
