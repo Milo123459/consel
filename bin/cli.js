@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Welcome to consel's cli code.
- * This is a client built off of child_process 
+ * This is a client built off of child_process
  */
 const readline = require("readline");
 const chalk = require("chalk");
@@ -19,7 +19,9 @@ if (process.argv[2]) {
     var bar = new ProgressBar(
       `${chalk.redBright(`:current/:total`)} ${chalk.blue("|")} ${chalk.cyan(
         ":elapsed seconds elapsed"
-      )} ${chalk.blue("|")} ${chalk.greenBright(`:bar`)} ${chalk.blue("|")} ${chalk.red(':eta estimated seconds remaining')}`,
+      )} ${chalk.blue("|")} ${chalk.greenBright(`:bar`)} ${chalk.blue(
+        "|"
+      )} ${chalk.red(":eta estimated seconds remaining")}`,
       {
         total: 20,
         complete: "+",
@@ -40,7 +42,13 @@ if (process.argv[2]) {
 }
 console.log(
   chalk.blueBright(
-    `Welcome to ${chalk.underline(chalk.bold(chalk.green(`consel`)))}. ${chalk.cyan(`Running on node-version ${process.version}`)}. ${chalk.magenta(chalk.bold(chalk.underline("CWD:")))} ${chalk.redBright(process.cwd())}`
+    `Welcome to ${chalk.underline(
+      chalk.bold(chalk.green(`consel`))
+    )}. ${chalk.cyan(
+      `Running on node-version ${process.version}`
+    )}. ${chalk.magenta(chalk.bold(chalk.underline("CWD:")))} ${chalk.redBright(
+      process.cwd()
+    )}`
   )
 );
 rl.on("line", async (line) => {
@@ -65,6 +73,8 @@ rl.on("line", async (line) => {
         return console.log(`${chalk.bgRedBright(`ERROR!`)} ${f}`);
       }
     });
+  } finally {
+    console.log(`${chalk.red(">")} Ready ${chalk.blue(Date.now())}`);
   }
 });
 rl.on("close", () => {
